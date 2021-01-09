@@ -58,7 +58,6 @@ puts "全 #{books.size} 件の登録処理を行います"
 puts '...'
 
 books.each.with_index(1) do |book_info, idx|
-#books.each do |book_info|
   progress_bar(idx, books.size)
   # CSVの形式:
   # サービスID, アイテムID, 13桁ISBN, カテゴリ, 評価, 読書状況, レビュー, タグ, 読書メモ(非公開), 登録日時, 読了日, タイトル, 作者名, 出版社名, 発行年, ジャンル, ページ数
